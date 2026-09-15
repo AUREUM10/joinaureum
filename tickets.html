@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tickets · The Aureum Club, Amsterdam</title>
+<meta name="description" content="Tickets for Aureum evenings in Amsterdam: intimate dinners, open drinks, AI masterclasses and workshops. Around fifteen seats an evening, the list hears first." />
+
+<meta property="og:title" content="Tickets · The Aureum Club" />
+<meta property="og:description" content="Seats for the next Aureum evening in Amsterdam. Around fifteen an evening, the list hears first." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://joinaureum.com/tickets.html" />
+<meta property="og:image" content="https://joinaureum.com/images/og-aureum.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tickets · The Aureum Club" />
+<meta name="twitter:description" content="Seats for the next Aureum evening in Amsterdam." />
+<meta name="twitter:image" content="https://joinaureum.com/images/og-aureum.jpg" />
+<link rel="canonical" href="https://joinaureum.com/tickets.html" />
+<link rel="icon" href="logo-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<!-- Meta Pixel (Aureum) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1758676818389889');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1758676818389889&ev=PageView&noscript=1" /></noscript>
+</head>
+<body>
+<div class="wrap">
+
+  <header id="topbar" class="solid">
+    <a href="index.html" class="brand"><img src="logo-wordmark.png" alt="Aureum" width="238" height="49" /></a>
+    <nav class="links">
+      <a href="about.html" class="hide-sm">Our Story</a>
+      <a href="events.html" class="hide-sm">Events</a>
+      <a href="membership.html" class="hide-sm">Membership</a>
+      <a href="blog.html" class="hide-sm">Blog</a>
+      <a href="events.html#upcoming" class="nav-cta">Upcoming Events</a>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="inner">
+      <div class="label">Tickets</div>
+      <h1 class="mask-lines on-load" style="margin-top:0.6rem;">
+        <span class="line"><span>A seat at <em>the table.</em></span></span>
+      </h1>
+      <p class="sub">Around fifteen seats an evening. The list hears first, then it's first come, first seated.</p>
+    </div>
+  </section>
+
+  <!-- NEXT EVENING TICKET CARD -->
+  <section class="cream section-tight">
+    <div class="ticket-card reveal">
+      <div class="ticket-info">
+        <span class="label">The Next Evening</span>
+        <h2>The next table is <em>being set.</em></h2>
+        <p>Date, venue and subject are announced to the list first, then here and on Luma. One ticket covers the evening itself: the table, the wine, the room. Aureum is a non-profit, so it never turns a profit.</p>
+        <!--
+          STRIPE SETUP (for Claude / Maroussia):
+          When the Aureum Stripe account exists, create a Payment Link per event
+          (Stripe Dashboard → Payment Links → New: product = event name, price = ticket price,
+          collect email ON, limit quantity to seat count) and replace the Luma button below with:
+          <a href="https://buy.stripe.com/XXXX" class="btn fill">Buy a Ticket</a>
+          Keep the Luma link as the second (line) button.
+        -->
+        <div class="cta-row">
+          <a href="https://luma.com/user/Aureum" target="_blank" rel="noopener" class="btn fill">Reserve via Luma</a>
+          <a href="index.html#join" class="btn line">Join the List</a>
+        </div>
+        <p class="ticket-note">Card payment directly on this page is coming. Until then, seats reserve through Luma in one minute.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TICKETS WORK -->
+  <section class="section-tight">
+    <div class="ed-head reveal">
+      <span class="label">How It Works</span>
+    </div>
+    <div class="pillars reveal-stagger">
+      <div class="pillar">
+        <h3>The list hears first</h3>
+        <p>New evenings go to the email list before they're announced anywhere else.</p>
+      </div>
+      <div class="pillar">
+        <h3>Seats are limited</h3>
+        <p>Around fifteen a night, so every table stays a conversation, not a crowd.</p>
+      </div>
+      <div class="pillar">
+        <h3>Your ticket is the evening</h3>
+        <p>Masterclass, table and welcome drink included. No memberships required to attend.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="inner reveal">
+      <h2>Don't want to <em>miss one?</em></h2>
+      <p>One quiet email when the next evening opens.</p>
+      <div class="cta-row">
+        <a href="index.html#join" class="btn fill">Join the List</a>
+        <a href="events.html" class="btn line">See Past Evenings</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img class="flogo" src="logo-wordmark.png" alt="Aureum" width="238" height="49" />
+    <nav class="fnav">
+      <a href="about.html">Our Story</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#join">Join the List</a>
+    </nav>
+    <div class="meta">
+      <a href="https://www.instagram.com/joinaureum/" target="_blank" rel="noopener">@joinaureum</a>
+      <span class="dot">·</span> <a href="https://www.linkedin.com/company/aureum-club/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot">·</span> <a href="mailto:info@joinaureum.com">info@joinaureum.com</a> <span class="dot">·</span> Amsterdam
+    </div>
+    <!-- Once the stichting is registered, add the KvK number here (legally required). -->
+    <div class="fine">© <span data-year></span> The Aureum Club. A non-profit for founders &amp; high achievers, Amsterdam.</div>
+  </footer>
+
+</div>
+<script src="site.js"></script>
+</body>
+</html>
