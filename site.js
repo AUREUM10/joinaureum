@@ -178,6 +178,10 @@
   // Meta Pixel: outbound intent clicks (Luma reserve, WhatsApp group)
   document.addEventListener('click', function(e){
     var a = e.target.closest && e.target.closest('a[href]'); if(!a || !window.fbq) return;
-    if(/luma\.com/.test(a.href)) fbq('trackCustom','ReserveClick',{url:a.href});
+    if(/luma\.com/.test(a.href)){
+      var card = a.closest && a.closest('.cf-date'); var name = card ? (card.querySelector('h3')||{}).textContent : 'Luma event';
+      var m = card && /€\s?(\d+)/.exec(card.textContent||''); var val = m ? parseFloat(m[1]) : 20;
+      fbq('track','InitiateCheckout',{content_name:name, content_type:'product', value:val, currency:'EUR'});
+    }
     if(/chat\.whatsapp\.com/.test(a.href)) fbq('trackCustom','WhatsAppJoin');
   });
