@@ -76,3 +76,18 @@ Maroussia flagged the site didn't say enough about what Aureum does and who's be
 - **LinkedIn voice in the statement block:** "It's not for collecting contacts… Most founders have five hundred connections and no one to call on a bad week — Aureum is where the people you can actually call come from."
 - **Board section got real:** headshots (from `~/Desktop/Aureum/Board Members/`, compressed to `images/board/`), plus one-line bios — Maroussia Tyl (founder of WOGO Amsterdam) and Anna Kotcharyan (founder of Pay the Public).
 - **To confirm:** the photo assignment (window photo = Maroussia, studio photo = Anna — swap is a 1-line fix), and a sharper line on what Pay the Public does.
+
+## 🆕 21 Oct 2026 — events refresh + photos, and a hosting correction
+- **joinaureum.com is served by GitHub Pages, NOT Netlify.** `curl -I` shows `server: GitHub.com`.
+  The Netlify command further up in this file deploys to joinaureum.netlify.app only and does NOT update the
+  live domain. **To publish: commit and push to `main` on `AUREUM10/joinaureum`**, then wait ~1 minute:
+  `cd ~/aureum-club && gh auth switch -u AUREUM10 && git add -A && git commit -m "..." && git push https://AUREUM10@github.com/AUREUM10/joinaureum.git main`
+- Events on both index.html and events.html: dropped the past 18 Oct coffee, now 5 Nov dinner, 15 Nov coffee
+  (luma.com/cdj975vj), 19 Nov drinks, 13 Dec coffee (luma.com/ojau351p). Heading is "November and December".
+  Structured data and llms.txt updated to match. Seat counts removed from the date lines (her rule: no seat counts).
+- Hero pill on both pages now says "next evening Thursday 5 November".
+- events.html gallery is now "The last evenings": 4 photos from Sunday Coffee (18 Oct, Conservatorium) and 4 from
+  Skyview Drinks (1 Oct), in `images/club/coffee-oct18-*.jpg` and `images/club/skyview-oct1-*.jpg`.
+  Sources: `~/Desktop/Aureum/IMG_37*.HEIC` (converted with sips) and `~/Desktop/Aureum/LinkedIn post Skyview 1 okt/`.
+- **To check with Maroussia:** the stat band on the homepage says "8+ evenings hosted" and "6 seats a night",
+  while her own correction of 7 Sep 2026 says 20+ evenings and 15 seats. Left untouched.
