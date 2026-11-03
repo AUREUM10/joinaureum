@@ -83,7 +83,7 @@ Maroussia flagged the site didn't say enough about what Aureum does and who's be
   live domain. **To publish: commit and push to `main` on `AUREUM10/joinaureum`**, then wait ~1 minute:
   `cd ~/aureum-club && gh auth switch -u AUREUM10 && git add -A && git commit -m "..." && git push https://AUREUM10@github.com/AUREUM10/joinaureum.git main`
 - Events on both index.html and events.html: dropped the past 18 Oct coffee, now 5 Nov dinner, 15 Nov coffee
-  (luma.com/cdj975vj), 19 Nov drinks, 13 Dec coffee (luma.com/ojau351p). Heading is "November and December".
+  (luma.com/cdj975vj), 19 Nov drinks, 10 Jan coffee (luma.com/ojau351p; moved from 13 Dec on 3 Nov 2026). Heading is "November and January".
   Structured data and llms.txt updated to match. Seat counts removed from the date lines (her rule: no seat counts).
 - Hero pill on both pages now says "next evening Thursday 5 November".
 - events.html gallery is now "The last evenings": 4 photos from Sunday Coffee (18 Oct, Conservatorium) and 4 from
