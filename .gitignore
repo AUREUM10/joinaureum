@@ -1,2 +1,12 @@
 # Local Netlify folder
 .netlify
+courses-preview.html
+courses-option-*.html
+.previews/
+workshop-*-preview.html
+STRIPE-STAPPEN.md
+CONFIRMATION-EMAILS.md
+COURSES-README.md
+courses.json
+build_courses.py
+add_photos.py

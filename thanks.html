@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>You're in · The Aureum Club, Amsterdam</title>
+<meta name="description" content="Your seat at The Aureum Club is booked. What happens next." />
+<meta name="robots" content="noindex" />
+<link rel="canonical" href="https://joinaureum.com/thanks.html" />
+<link rel="icon" href="logo-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..700,0..100,0..1&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<!-- Meta Pixel (Aureum) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1758676818389889');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1758676818389889&ev=PageView&noscript=1" /></noscript>
+</head>
+<body>
+<div class="wrap">
+
+  <header id="topbar" class="solid">
+    <a href="index.html" class="brand"><img src="logo-wordmark.png" alt="Aureum" width="238" height="49" /></a>
+    <nav class="links">
+      <a href="about.html" class="hide-sm">Our Story</a>
+      <a href="events.html" class="hide-sm">Events</a>
+      <a href="membership.html" class="hide-sm">Membership</a>
+      <a href="blog.html" class="hide-sm">Blog</a>
+      <a href="events.html#upcoming" class="nav-cta">Upcoming Events</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="inner">
+      <div class="label">Confirmed</div>
+      <h1 class="mask-lines on-load" style="margin-top:0.6rem;">
+        <span class="line"><span>Your seat is <em>booked.</em></span></span>
+      </h1>
+      <p class="sub" id="what-you-booked">We have you down. A receipt is on its way to your inbox.</p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="booked-box" hidden>
+    <div class="ab-wrap ab-narrow">
+      <div class="wk-facts">
+        <div><span>Workshop</span><span id="bk-name"></span></div>
+        <div><span>When</span><span id="bk-when"></span></div>
+        <div><span>Where</span><span id="bk-where"></span></div>
+        <div><span>Bring</span><span id="bk-bring"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="ed-head reveal">
+      <span class="label">What Happens Next</span>
+    </div>
+    <div class="pillars reveal-stagger">
+      <div class="pillar">
+        <h3>A receipt, within a minute</h3>
+        <p>Sent automatically by Stripe. Keep it, it is your proof of payment.</p>
+      </div>
+      <div class="pillar">
+        <h3>Your confirmation, within a day</h3>
+        <p>A real email from us with everything above, plus how to prepare. If it has not arrived in 24 hours, check your spam and then write to us.</p>
+      </div>
+      <div class="pillar">
+        <h3>The address, at least a week before</h3>
+        <p>We are in central Amsterdam. You get the exact address, the door and how to get there by email, in good time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="inner reveal">
+      <h2>While you <em>wait.</em></h2>
+      <p>The group chat is where the conversations carry on between evenings.</p>
+      <div class="cta-row">
+        <a href="https://chat.whatsapp.com/C6v3DrIp3f0IPG14szNVzx" target="_blank" rel="noopener" class="btn fill">Join the WhatsApp Group</a>
+        <a href="events.html" class="btn line">See What Else Is Coming</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img class="flogo" src="logo-wordmark.png" alt="Aureum" width="238" height="49" />
+    <nav class="fnav">
+      <a href="about.html">Our Story</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#join">Join the List</a>
+    </nav>
+    <div class="meta">
+      <a href="https://www.instagram.com/joinaureum/" target="_blank" rel="noopener">@joinaureum</a>
+      <span class="dot">·</span> <a href="https://www.linkedin.com/company/aureum-club/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot">·</span> <a href="mailto:info@joinaureum.com">info@joinaureum.com</a> <span class="dot">·</span> Amsterdam
+    </div>
+    <div class="fine">© <span data-year></span> The Aureum Club. A non-profit for founders &amp; high achievers, Amsterdam.</div>
+  </footer>
+
+</div>
+<script src="booked-data.js"></script>
+<script src="site.js"></script>
+<script>
+/* Stripe sends the buyer here after payment. We add our own query string to the
+   redirect URL in the Payment Link, e.g.
+   https://joinaureum.com/thanks.html?n=AI%20Course%20One&v=95&sid={CHECKOUT_SESSION_ID}
+   n = what they bought, v = amount in euros, sid = Stripe's own session id,
+   which Stripe fills in. The sid stops a refresh counting as a second sale.
+   Nothing private goes on this page: it is a public URL, so never the address. */
+(function(){
+  var q = new URLSearchParams(location.search);
+
+  /* Laat meteen zien wat er geboekt is. De Stripe-betaallink stuurt hier
+     ?id=workshop-1 (of workshop-2, workshop-3, programme, early) naartoe. */
+  var booked = (window.AUREUM_BOOKED || {})[q.get('id') || ''];
+  if (booked) {
+    var box = document.getElementById('booked-box');
+    document.getElementById('bk-name').textContent  = booked.name;
+    document.getElementById('bk-when').textContent  = booked.when;
+    document.getElementById('bk-where').textContent = (window.AUREUM_BOOKED._where || 'Central Amsterdam.');
+    document.getElementById('bk-bring').textContent = booked.bring;
+    box.hidden = false;
+    var sub = document.getElementById('what-you-booked');
+    if (sub) { sub.textContent = 'You have a seat at ' + booked.name + '. Here is everything in one place.'; }
+  }
+
+  var name = (booked && booked.name) || q.get('n');
+  var val  = parseFloat(q.get('v') || (booked ? booked.price : 0) || '0');
+  if (name) {
+    var el = document.getElementById('what-you-booked');
+    if (el) el.textContent = 'You are booked for ' + name + '. A receipt is on its way to your inbox.';
+  }
+  /* Alleen de eerste keer tellen. Stripe zet de sessie-id in de link, dus een
+     refresh of een tweede bezoek telt niet nog een keer mee in de advertenties. */
+  var sid = q.get('sid') || '';
+  var once = true;
+  try {
+    var seen = JSON.parse(localStorage.getItem('aureum_purchases') || '[]');
+    if (sid && seen.indexOf(sid) !== -1) { once = false; }
+    else if (sid) { seen.push(sid); localStorage.setItem('aureum_purchases', JSON.stringify(seen.slice(-50))); }
+  } catch (e) { /* private window: dan tellen we gewoon */ }
+
+  if (window.fbq && once) {
+    fbq('track', 'Purchase', {
+      content_name: name || 'Aureum seat',
+      content_type: 'product',
+      value: isNaN(val) ? 0 : val,
+      currency: 'EUR'
+    }, sid ? { eventID: sid } : undefined);
+  }
+})();
+</script>
+</body>
+</html>
