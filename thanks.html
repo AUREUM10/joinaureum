@@ -56,7 +56,7 @@ fbq('track', 'PageView');
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="next-steps">
     <div class="ed-head reveal">
       <span class="label">What Happens Next</span>
     </div>
@@ -127,7 +127,7 @@ fbq('track', 'PageView');
     document.getElementById('bk-where').textContent = (booked.where || window.AUREUM_BOOKED._where || 'Central Amsterdam.');
     document.getElementById('bk-bring').textContent = booked.bring;
     box.hidden = false;
-    if (booked.where) { var wk = document.getElementById('next-address'); if (wk) wk.hidden = true; }
+    if (booked.where) { var wk = document.getElementById('next-steps'); if (wk) wk.hidden = true; }
     var sub = document.getElementById('what-you-booked');
     if (sub) { sub.textContent = 'You have a seat at ' + booked.name + '. Here is everything in one place.'; }
   }
