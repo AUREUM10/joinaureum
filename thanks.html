@@ -69,7 +69,7 @@ fbq('track', 'PageView');
         <h3>Your confirmation, within a day</h3>
         <p>A real email from us with everything above, plus how to prepare. If it has not arrived in 24 hours, check your spam and then write to us.</p>
       </div>
-      <div class="pillar">
+      <div class="pillar" id="next-address">
         <h3>The address, at least a week before</h3>
         <p>We are in central Amsterdam. You get the exact address, the door and how to get there by email, in good time.</p>
       </div>
@@ -105,7 +105,7 @@ fbq('track', 'PageView');
   </footer>
 
 </div>
-<script src="booked-data.js"></script>
+<script src="booked-data.js?v=20261114"></script>
 <script src="site.js"></script>
 <script>
 /* Stripe sends the buyer here after payment. We add our own query string to the
@@ -127,6 +127,7 @@ fbq('track', 'PageView');
     document.getElementById('bk-where').textContent = (booked.where || window.AUREUM_BOOKED._where || 'Central Amsterdam.');
     document.getElementById('bk-bring').textContent = booked.bring;
     box.hidden = false;
+    if (booked.where) { var wk = document.getElementById('next-address'); if (wk) wk.hidden = true; }
     var sub = document.getElementById('what-you-booked');
     if (sub) { sub.textContent = 'You have a seat at ' + booked.name + '. Here is everything in one place.'; }
   }
