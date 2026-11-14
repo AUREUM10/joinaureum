@@ -30,5 +30,12 @@ window.AUREUM_BOOKED = {
     "bring": "Your laptop, a Claude Pro subscription and one repetitive business task you'd love to get rid of.",
     "price": 580
   },
+  "coffee-15-nov": {
+    "name": "Aureum Sunday Coffee",
+    "when": "Sunday 15 November 2026, 11:00 to 13:00",
+    "where": "Conservatorium Hotel, Van Baerlestraat 27, Museumplein. Walk into the lobby and look for the table with the Aureum board on it.",
+    "bring": "Just yourself. Your €20 is for the chair at the table; coffee you order at the bar and settle yourself.",
+    "price": 20
+  },
   "_where": "Central Amsterdam. You get the exact address by email at least a week before."
 };

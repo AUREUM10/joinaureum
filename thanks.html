@@ -48,7 +48,7 @@ fbq('track', 'PageView');
   <section class="section-tight" id="booked-box" hidden>
     <div class="ab-wrap ab-narrow">
       <div class="wk-facts">
-        <div><span>Workshop</span><span id="bk-name"></span></div>
+        <div><span>What</span><span id="bk-name"></span></div>
         <div><span>When</span><span id="bk-when"></span></div>
         <div><span>Where</span><span id="bk-where"></span></div>
         <div><span>Bring</span><span id="bk-bring"></span></div>
@@ -124,7 +124,7 @@ fbq('track', 'PageView');
     var box = document.getElementById('booked-box');
     document.getElementById('bk-name').textContent  = booked.name;
     document.getElementById('bk-when').textContent  = booked.when;
-    document.getElementById('bk-where').textContent = (window.AUREUM_BOOKED._where || 'Central Amsterdam.');
+    document.getElementById('bk-where').textContent = (booked.where || window.AUREUM_BOOKED._where || 'Central Amsterdam.');
     document.getElementById('bk-bring').textContent = booked.bring;
     box.hidden = false;
     var sub = document.getElementById('what-you-booked');
