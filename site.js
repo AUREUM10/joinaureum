@@ -183,7 +183,7 @@
       var m = card && /€\s?(\d+)/.exec(card.textContent||''); var val = m ? parseFloat(m[1]) : 20;
       fbq('track','InitiateCheckout',{content_name:name, content_type:'product', value:val, currency:'EUR'});
     }
-    if(/buy\.stripe\.com/.test(a.href)){
+    if(/buy\.stripe\.com|\/api\/checkout/.test(a.href)){
       var cn = a.getAttribute('data-name') || 'Aureum course';
       var cv = parseFloat(a.getAttribute('data-value') || '0');
       fbq('track','InitiateCheckout',{content_name:cn, content_type:'product', value:cv, currency:'EUR'});

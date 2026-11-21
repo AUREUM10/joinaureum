@@ -66,4 +66,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://joinaureum.com/courses-trainers.html</loc></url>
+  <url><loc>https://joinaureum.com/courses-faq.html</loc></url>
 </urlset>

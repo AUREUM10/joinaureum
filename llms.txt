@@ -23,10 +23,11 @@ Exact venues are shared after registration, never published in advance.
 - Sun 10 Jan 2027, 11:00: Sunday Coffee, EUR 20. https://luma.com/ojau351p
 All events are ticketed on Luma: https://luma.com/user/Aureum
 
-## AI Builder Program (paid workshops)
+## AI Builder Programme (paid workshops)
 Three hands-on AI workshops in Amsterdam for entrepreneurs, freelancers and business owners.
 Maximum 12 participants per workshop. All prices exclude VAT.
 Programme page: https://joinaureum.com/courses.html
+- Full programme, all three workshops: 700 euro, early bird 580 euro for the first five bookings.
 - Workshop 01, Claude for Your Business. Sunday 17 January 2027, 12:00 to 16:00. 250 euro.
   You set Claude up around your own business and leave with recurring work already automated.
   https://joinaureum.com/workshop-1.html

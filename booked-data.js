@@ -9,7 +9,7 @@ window.AUREUM_BOOKED = {
   "workshop-2": {
     "name": "Claude Code: Build & Launch Your Own App",
     "when": "Sunday 24 January 2027, 10:00 to 17:00, lunch included",
-    "bring": "Your laptop, a Claude Pro subscription (Max recommended for a full day of building) and an idea you'd like to bring to life. We'll send you a setup guide before the workshop so you can arrive ready to build.",
+    "bring": "Your laptop, a Claude Pro subscription and an idea you'd like to bring to life. Claude Max is optional and gives you more room on a full day of building. We'll send you a setup guide two weeks before, so you arrive ready to build.",
     "price": 350
   },
   "workshop-3": {
