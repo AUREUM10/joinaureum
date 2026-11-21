@@ -11,3 +11,4 @@ courses.json
 build_courses.py
 add_photos.py
 *-preview.html
+cleanurls.py

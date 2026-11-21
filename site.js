@@ -190,3 +190,25 @@
     }
     if(/chat\.whatsapp\.com/.test(a.href)) fbq('trackCustom','WhatsAppJoin');
   });
+
+/* Mobiel menu: op smalle schermen zijn de menu-items verborgen, dus een Menu-knop met een volledig scherm. */
+(function(){
+  var nav = document.querySelector('header nav.links'); if(!nav || document.querySelector('.mnav')) return;
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+  var btn = document.createElement('button'); btn.className = 'menu-btn'; btn.type = 'button';
+  btn.setAttribute('aria-label','Open menu'); btn.textContent = 'Menu';
+  nav.appendChild(btn);
+  var panel = document.createElement('div'); panel.className = 'mnav'; panel.setAttribute('role','dialog'); panel.setAttribute('aria-label','Menu');
+  var close = document.createElement('button'); close.className = 'close'; close.type = 'button'; close.setAttribute('aria-label','Close menu'); close.innerHTML = '&times;';
+  panel.appendChild(close);
+  links.forEach(function(a){
+    var c = document.createElement('a'); c.href = a.getAttribute('href'); c.textContent = a.textContent;
+    if(a.classList.contains('nav-cta')) c.className = 'cta';
+    c.addEventListener('click', function(){ document.body.classList.remove('menu-open'); });
+    panel.appendChild(c);
+  });
+  document.body.appendChild(panel);
+  btn.addEventListener('click', function(){ document.body.classList.add('menu-open'); });
+  close.addEventListener('click', function(){ document.body.classList.remove('menu-open'); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') document.body.classList.remove('menu-open'); });
+})();
